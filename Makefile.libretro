@@ -66,7 +66,7 @@ ifeq ($(platform), unix)
 	TARGET := $(TARGET_NAME)_libretro.so
 	fpic := -fPIC
 ifneq ($(findstring SunOS,$(shell uname -a)),)
-	CC = gcc
+	#CC = gcc
 	SHARED := -shared -z defs
 else
 	SHARED := -shared -Wl,--version-script=src/drivers/libretro/link.T -Wl,-no-undefined
@@ -652,7 +652,7 @@ CFLAGS += -D_CRT_SECURE_NO_DEPRECATE
 # Windows
 else
 	TARGET := $(TARGET_NAME)_libretro.dll
-	CC ?= gcc
+	#CC ?= gcc
 	SHARED := -shared -static-libgcc -static-libstdc++ -s -Wl,--version-script=src/drivers/libretro/link.T
    PSS_STYLE :=2
 endif
