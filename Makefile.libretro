@@ -658,6 +658,7 @@ else
    PSS_STYLE :=2
 endif
 
+DEBUG=1
 ifeq ($(DEBUG), 1)
 	ifneq (,$(findstring msvc,$(platform)))
 		ifeq ($(STATIC_LINKING),1)
