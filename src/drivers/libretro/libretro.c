@@ -2243,6 +2243,10 @@ static const struct cartridge_db fourscore_db_list[] =
    {
       "Super Mario Bros. + Tetris + Nintendo World Cup (Europe) (Rev A)",
       0xf46ef39a
+   },
+   {
+	   "Dynablaster (Europe)",
+	   0x34bb757b
    }
 };
 
